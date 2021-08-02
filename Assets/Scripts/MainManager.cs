@@ -4,7 +4,8 @@ using UnityEngine;
 using System.IO;
 public class MainManager : MonoBehaviour
 {
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; } // add private setter
+
     public Color TeamColor; // new variable declared
     private void Awake()
     {
